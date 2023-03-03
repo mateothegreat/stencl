@@ -2,6 +2,7 @@
     "name": "@stencl/cli",
     "version": "0.0.2",
     "description": "oclif example Hello World CLI",
+    "private": false,
     "author": "Matthew Davis @mateothegreat",
     "bin": {
         "stencl": "./bin/run"
