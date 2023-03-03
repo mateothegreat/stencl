@@ -1,6 +1,6 @@
 {
     "name": "@stencl/cli",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "oclif example Hello World CLI",
     "private": false,
     "author": "Matthew Davis @mateothegreat",
