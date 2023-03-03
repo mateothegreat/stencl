@@ -1,0 +1,26 @@
+import { Controller, Delete, Get, Post } from '@nestjs/common';
+import { {{pascalCase name}}Service } from './{{pascalCase name}}Service';
+
+export class {{pascalCase name}}Controller {
+    public constructor(private readonly {{camelCase name}}Service: {{pascalCase name}}Service) {}
+
+    @Get()
+    public findAll(): {{pascalCase name}}[] {
+        return this.{{camelCase name}}Service.findAll();
+    }
+
+    @Get(':id')
+    public findOne(@Param('id') id: string): {{pascalCase name}} {
+        return this.{{camelCase name}}Service.findOne(+id);
+    }
+
+    @Post()
+    public create(@Body() {{camelCase name}}: {{pascalCase name}}) {
+        return this.{{camelCase name}}Service.create({{camelCase name}});
+    }
+
+    @Delete(':id')
+    public remove(@Param('id') id: string) {
+        return this.{{camelCase name}}Service.remove(+id);
+    }
+}

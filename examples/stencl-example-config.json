@@ -1,0 +1,6 @@
+{
+    "basePath": "~/workspcace/stencl/cli/examples/collections",
+    "collectionPaths": [
+        "./"
+    ]
+}

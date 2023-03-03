@@ -1,0 +1,37 @@
+{
+    "name": "terraform",
+    "description": "Terraform module template",
+    "schematics": [
+        {
+            "name": "variables",
+            "input": "variables.tf.hbs",
+            "output": {
+                "path": "{{pascalCase name}}",
+                "filename": "0-variables.tf"
+            }
+        },
+        {
+            "name": "main",
+            "input": "main.tf.hbs",
+            "output": {
+                "path": "{{pascalCase name}}",
+                "filename": "1-main.tf"
+            }
+        },
+        {
+            "name": "outputs",
+            "input": "outputs.tf.hbs",
+            "output": {
+                "path": "{{pascalCase name}}",
+                "filename": "9-outputs.tf"
+            }
+        }
+    ],
+    "groups": {
+        "module": [
+            "main",
+            "variables",
+            "outputs"
+        ]
+    }
+}

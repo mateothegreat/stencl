@@ -1,0 +1,28 @@
+{
+    "name": "nestjs",
+    "description": "NestJS",
+    "schematics": [
+        {
+            "name": "controller",
+            "input": "controller.ts.hbs",
+            "output": {
+                "path": ".",
+                "filename": "{{pascalCase name}}Controller.ts"
+            }
+        },
+        {
+            "name": "service",
+            "input": "service.ts.hbs",
+            "output": {
+                "path": ".",
+                "filename": "{{pascalCase name}}Service.ts"
+            }
+        }
+    ],
+    "groups": {
+        "rest": [
+            "controller",
+            "service"
+        ]
+    }
+}
